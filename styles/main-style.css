@@ -19,10 +19,11 @@ header {
     flex: 1 1 20em;
     display: flex;
     /* max-width: 300px; */
-    margin: 5px 20px 5px 35px;
+    margin: 15px 20px 15px 35px;
 }
 .title img {
-    width: 120px;
+    width: auto;
+    height: 90px;
 }
 .title h3 {
     padding: 0;
