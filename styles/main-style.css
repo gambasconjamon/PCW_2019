@@ -50,10 +50,13 @@ header h3 {
   display: inherit;
   flex-direction: column;
   justify-content: center;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 /*MENU*/
+#menutoggle{
+    display: none;
+}
 ul.menu {
   display: flex;
   flex: 1 1 20em;
@@ -65,6 +68,8 @@ ul.menu {
   list-style: none;
   padding: 0;
   max-width: 750px;
+  top: initial;
+  transition: 0.5s ease;
 }
 
 .menu li {
@@ -73,7 +78,7 @@ ul.menu {
   position: relative;
   margin: auto 5px auto 5px;
   transition: 0.5s ease;
-    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); */;
+  /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); */
 }
 
 .menu li:hover {
@@ -226,27 +231,61 @@ section.img-container {
       .menu li a{
           padding: 20px 0;
       }
+      .title img {
+  
+        height: 60px;
+      }
+      
+      .title h3 {
+        font-size: 0.7em
+      }
+      .title h1{
+          font-size: 1.2em;
+      }
+      .title div{
+          margin-left: 10px;
+      }
 
 }
 @media (max-width: 500px) { /*Chiqui-pantallas*/
  
-
+    .title{
+        margin: 15px 5px 15px 20px;
+        
+    }
   /*MENU MOVIL*/
+
+  #menutoggle{
+    background: black;
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    display: block;
+    z-index: 99;
+  }
+  
   ul.menu {
     margin: 0;
     padding: 0;
     flex-direction: column;
+    justify-content: flex-start;
     position: absolute;
     width: 100%;
     height: calc(100vh - 95px);
     background: white;
+    z-index: -2;
+    top: -600px;
   }
-
+  #menutoggle:checked + ul.menu{
+    top:95px;  
+ }
+  
   .menu li {
     flex: none;
     background: white;
     width: 90%;
-    margin: auto;
+    margin: 5% auto 0px auto;
+  
   }
 
   .menu li:hover {
