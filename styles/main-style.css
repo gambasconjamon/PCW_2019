@@ -54,6 +54,10 @@ header h3 {
 }
 
 /*MENU*/
+.activador{
+    display: flex;
+    flex: 1 1 20em;
+}
 #menutoggle{
     display: none;
 }
@@ -281,7 +285,6 @@ section.img-container {
   }
   #menutoggle:checked + .activador #menu-icon>span:nth-child(1){
     transform: rotate(45deg) translate(10px, 8px);
-    t
  }
  #menutoggle:checked + .activador #menu-icon>span:nth-child(2){
     width:0;
