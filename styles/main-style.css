@@ -258,8 +258,11 @@ section.img-container {
   #menutoggle{
     background: black;
     position: absolute;
-    right: 20px;
-    top: 45px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    opacity: 0;
     display: block;
     z-index: 99;
   }
@@ -276,8 +279,38 @@ section.img-container {
     z-index: -2;
     top: -600px;
   }
-  #menutoggle:checked + ul.menu{
+  #menutoggle:checked + .activador #menu-icon>span:nth-child(1){
+    transform: rotate(45deg) translate(10px, 8px);
+    t
+ }
+ #menutoggle:checked + .activador #menu-icon>span:nth-child(2){
+    width:0;
+ }
+ #menutoggle:checked + .activador #menu-icon>span:nth-child(3){
+    transform: rotate(-45deg) translate(10px, -8px);
+ }
+ 
+  #menutoggle:checked + .activador ul.menu{
     top:95px;  
+ }
+ 
+ #menu-icon{
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 25px;
+     right: 20px;
+     /* background:yellow; */
+ }
+ #menu-icon span{
+     height: 3px;
+     margin: 10px auto;
+     background: black;
+     width: 90%;
+     z-index: 4;
+     display: block;
+     transition: all 0.2s ease;
+     
  }
   
   .menu li {
