@@ -56,7 +56,8 @@ header h3 {
 /*MENU*/
 .activador{
     display: flex;
-    flex: 1 1 20em;
+    flex: 1 1 30em;
+    max-width: 750px;
 }
 #menutoggle{
     display: none;
@@ -68,10 +69,8 @@ ul.menu {
   position: relative;
   margin: 0 40px 0 20px;
   justify-content: space-between;
-    /* height: auto; */
   list-style: none;
   padding: 0;
-  max-width: 750px;
   top: initial;
   transition: 0.5s ease;
 }
@@ -91,7 +90,8 @@ ul.menu {
 }
 
 .menu li a {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 10px 5px 10px 5px;
   color: black;
   font-style: italic;
@@ -99,14 +99,16 @@ ul.menu {
   font-size: 0.9em;
   text-decoration: none;
   position: relative;
-    /* border-bottom: solid; */
-    /* border-width: 0.2em; */
   margin: auto;
   text-transform: uppercase;
   background: white;
   width: 100%;
   transition: 0.5s ease;
   text-align: center;
+}
+.menu li a i{
+  font-size: 1.4em;
+  margin: 3px;
 }
 
 .menu li a:hover {
@@ -261,12 +263,20 @@ footer nav{
         flex-wrap: wrap;
         display: block;
       }
+      .activador{
+        max-width: none;
+
+      }
+      
       ul.menu{
           margin: 0;
       }
       .menu li a{
           padding: 20px 0;
       }
+      .menu li a span{
+        display: none;
+    }
       .title img {
   
         height: 60px;
@@ -314,6 +324,12 @@ footer nav{
     background: white;
     z-index: -2;
     top: -600px;
+  }
+  .menu li a i{
+    display: none;
+  }
+  .menu li a span{
+    display: initial;
   }
   #menutoggle:checked + .activador #menu-icon>span:nth-child(1){
     transform: rotate(45deg) translate(6px, 15px);
@@ -365,6 +381,7 @@ footer nav{
     font-size: 1.1em;
     padding: 5px 5px 5px 5px;
   }
+  
   header h1, header h3 {
     display: none;
   }
