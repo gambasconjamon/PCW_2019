@@ -38,7 +38,7 @@ header h3 {
   height: 90px;
 }
 
-.title h3 {
+header h3 {
   padding: 0;
   margin: 0;
   font-style: italic;
@@ -118,10 +118,13 @@ ul.menu {
 }
 /*MENU*/
 /*HEADER*/
-main {
-  margin-top: 200px;
-}
 
+
+main {
+  margin-top: 170px;
+  margin-bottom: 59px;
+}
+/*GALLERY*/
 .img-container article img {
   display: block;
   width: 100%;
@@ -187,6 +190,7 @@ section.img-container {
 
 .img-info {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-between;
   margin: 15px;
@@ -223,6 +227,33 @@ section.img-container {
   vertical-align: middle;
   margin: 2px;
 }
+/*GALLERY*/
+
+/*FOOTER*/
+footer{
+  position: relative;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.1);
+}
+footer p{
+  margin: auto 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+footer>a{
+  margin: auto 20px;
+}
+footer nav{
+  margin: auto;
+  display: block;
+}
+/*FOOTER*/
+
 @media (max-width: 870px) { /*Pantallas no tan grandes*/
     header {
         background: rgba(255,255,255,1);
@@ -333,7 +364,7 @@ section.img-container {
     font-size: 1.1em;
     padding: 5px 5px 5px 5px;
   }
-  header h1,h3 {
+  header h1, header h3 {
     display: none;
   }
   .title img{
