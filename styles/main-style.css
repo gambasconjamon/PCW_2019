@@ -284,13 +284,13 @@ section.img-container {
     top: -600px;
   }
   #menutoggle:checked + .activador #menu-icon>span:nth-child(1){
-    transform: rotate(45deg) translate(10px, 8px);
+    transform: rotate(45deg) translate(6px, 15px);
  }
  #menutoggle:checked + .activador #menu-icon>span:nth-child(2){
     width:0;
  }
  #menutoggle:checked + .activador #menu-icon>span:nth-child(3){
-    transform: rotate(-45deg) translate(10px, -8px);
+    transform: rotate(-45deg) translate(6px, -15px);
  }
  
   #menutoggle:checked + .activador ul.menu{
@@ -301,19 +301,18 @@ section.img-container {
      width: 50px;
      height: 50px;
      position: absolute;
-     top: 25px;
+     top: 21px;
      right: 20px;
      /* background:yellow; */
  }
  #menu-icon span{
-     height: 3px;
-     margin: 10px auto;
+     height: 2px;
+     margin: 13px auto;
      background: black;
      width: 90%;
      z-index: 4;
      display: block;
      transition: all 0.2s ease;
-     
  }
   
   .menu li {
