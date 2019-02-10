@@ -245,13 +245,14 @@ footer p{
   font-style: italic;
   opacity: 0.6;
 }
-footer>a{
-  margin: auto 20px;
-}
+footer a{
+  text-decoration: none;
+} 
 footer nav{
   margin: auto;
   display: block;
 }
+
 /*FOOTER*/
 
 @media (max-width: 870px) { /*Pantallas no tan grandes*/
