@@ -235,25 +235,43 @@ section.img-container {
 footer{
   position: relative;
   bottom: 0;
-  height: 100px;
+  height: 120px;
   display: flex;
+  padding: 10px;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: rgba(255,255,255,1);
   box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.1);
 }
 footer p{
-  margin: auto 25px;
-  font-style: italic;
-  opacity: 0.6;
+ 
+font-style: italic;
+ 
+font-weight: 100;
+ 
+text-align: center;
+ 
+margin: auto;
+ 
+opacity: 0.6;
+}
+footer nav{
+  
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+flex-direction: row-reverse;
 }
 footer a{
   text-decoration: none;
+  color: black;
+  padding-right: 5px;
+  transition: 0.3s;
 } 
-footer nav{
-  margin: auto;
-  display: block;
-}
+footer a:hover{
+  border-bottom: solid 1px;
+} 
+
 
 /*FOOTER*/
 
