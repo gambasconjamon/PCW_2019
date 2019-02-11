@@ -265,8 +265,9 @@ flex-direction: row-reverse;
 footer a{
   text-decoration: none;
   color: black;
-  padding-right: 5px;
+  padding-right: 10px;
   transition: 0.3s;
+  margin: auto;
 } 
 footer a:hover{
   border-bottom: solid 1px;
