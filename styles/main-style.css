@@ -129,8 +129,9 @@ ul.menu {
 
 
 main {
-  margin-top: 170px;
-  margin-bottom: 59px;
+  margin-top: 130px;
+  min-height: calc(100vh - (130px - 55px) - 100px - 140px - 10px);
+  margin-bottom: 55px;
 }
 
 /*GALLERY*/
@@ -372,6 +373,13 @@ footer a:hover {
     margin-left: 10px;
   }
 
+  main {
+    margin-top: 130px;
+    min-height: calc(100vh - (130px - 55px) - 100px - 140px - 10px);
+    margin-bottom: 55px;
+  }
+
+
 }
 
 @media (max-width: 500px) {
@@ -479,6 +487,13 @@ footer a:hover {
   .title img {
     height: 65px;
   }
+
+  main {
+    margin-top: 130px;
+    min-height: calc(100vh - (130px - 55px) - 100px - 140px - 10px);
+    margin-bottom: 55px;
+  }
+
 
   /*MENU MOVIL*/
 }
