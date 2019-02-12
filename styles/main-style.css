@@ -128,11 +128,27 @@ main {
 }
 /*GALLERY*/
 .img-container article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.img-container a.img-link{
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
+}
+.img-data a{
+  text-decoration: none;
+  transition: 0.3s ease;
+  opacity: 0.5;
+  color: black;
+}
+.img-data a:hover{
+  font-size: 1.05em;
+  opacity: 1;
 }
 
 .img-data h3 {
@@ -140,11 +156,12 @@ main {
   margin: auto;
   padding: 0;
 }
-
-.img-data p {
-    /* margin: 10px 15px; */
+.img-data p  {
   margin: auto;
   padding: 0;
+
+  color: black;
+
 }
 
 section.img-container {
@@ -207,7 +224,6 @@ section.img-container {
   padding: 2px;
   font-style: italic;
   color: black;
-  opacity: 0.5;
 }
 
 .img-stat i {
