@@ -273,10 +273,12 @@ section.img-container {
   border-bottom: solid black 0px;
   transition: 0.5s ease;
   color: black;
+  opacity: 0.7;
 }
 
 .pags a:hover {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  opacity: 1;
 }
 
 /*GALLERY*/
