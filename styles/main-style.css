@@ -349,7 +349,7 @@ footer a:hover {
   }
 
   .menu li a {
-    padding: 0px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
   }
 
   .menu li a span {
@@ -375,8 +375,8 @@ footer a:hover {
   }
 
   main {
-    margin-top: 130px;
-    min-height: calc(100vh - (130px - 55px) - 100px - 140px - 10px);
+    margin-top: 140px;
+    min-height: calc(100vh - (140px - 55px) - 100px - 140px - 10px);
     margin-bottom: 55px;
   }
 
