@@ -22,6 +22,7 @@ header {
 
 header h1 {
   margin: 0;
+  line-height: 30px;
 }
 
 header h3 {
@@ -43,9 +44,8 @@ header h3 {
 header h3 {
   padding: 0;
   margin: 0;
-  font-style: italic;
-  text-transform: uppercase;
   font-weight: 200;
+  text-transform: uppercase;
 }
 
 .title div {
@@ -98,13 +98,10 @@ ul.menu {
   justify-content: center;
   padding: 10px 5px 10px 5px;
   color: black;
-  font-style: italic;
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 1em;
   text-decoration: none;
   position: relative;
-  /* margin: auto; */
-  text-transform: uppercase;
   background: white;
   width: 100%;
   transition: 0.3s ease-in-out;
@@ -570,4 +567,8 @@ form input[type="submit"]:hover {
 
 .register h2 {
   font-size: 2em;
+}
+
+.menu li a span {
+  padding: 3px;
 }
