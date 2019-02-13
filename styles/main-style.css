@@ -567,6 +567,7 @@ form input[type="submit"]:hover {
 
 .register h2 {
   font-size: 2em;
+  margin: 0px 0px 20px 0px;
 }
 
 .menu li a span {
