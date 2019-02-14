@@ -76,7 +76,7 @@ ul.menu {
   list-style: none;
   padding: 0;
   top: initial;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .menu li {
@@ -418,7 +418,7 @@ footer a:hover {
     height: calc(100vh - 95px);
     background: white;
     z-index: -2;
-    top: -600px;
+    top: -100vh;
   }
 
   .menu li a i {
@@ -506,7 +506,6 @@ footer a:hover {
 section.form-cont {
   max-width: 500px;
   position: relative;
-  /* background: red; */
   padding: 40px;
   margin: auto;
 }
@@ -571,3 +570,32 @@ form input[type="submit"]:hover {
 
 /*FORM*/
 /*REGISTRO*/
+
+/*BUSQUEDA*/
+section.form-cont.f-search {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  flex: 1 5 10em;
+  max-width: none;
+}
+
+.search-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+section.i-search {
+  margin: 0;
+  max-width: none;
+  flex: 5 1 30em;
+}
+
+.f-search form {
+  padding: 15px;
+  margin: 5px;
+}

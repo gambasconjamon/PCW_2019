@@ -47,18 +47,13 @@
 	<main>
 		<div class="search-wrap">
 			<section class="form-cont f-search">
-				<h2>Unete a nosotros.</h2>
 				<form action="">
-					<input type="text" name="login" required placeholder="Alias " autofocus pattern="^\D[\w\d]{4,20}" title="No puede empezar por numero, puede contener de 4 a 20 caracteres (mayusculas, minusculas y numeros)">
-					<input type="text" name="nombre" required placeholder="Nombre completo">
-					<input type="email" name="email" required placeholder="Email">
-					<input type="password" name="pass1" required placeholder="Introduce Contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s)(?!.*[!-/:-?\[-`{-~]).{6,20}$"
-					 title="Debe contener al menos una mayuscula, minuscula y numero, de 6 a 20 caracteres ">
-					<input type="password" name="pass2" placeholder="Confirma Contraseña">
-					<input type="submit" value="Registrarme">
-				</form>
-				<p>¿Ya tienes una cuenta? <a href="login.html">Accede aquí</a></p>
+					<input type="search" name="s-titulo" placeholder="Titulo de foto " autofocus>
+					<input type="search" name="s-desc" placeholder="Descripcion " autofocus>
+					<input type="search" name="s-aut" placeholder="Autor " autofocus>
 
+					<input type="submit" value="Buscar">
+				</form>
 			</section>
 			<section class="img-container i-search" id="top">
 
