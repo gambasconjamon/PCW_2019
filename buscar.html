@@ -47,11 +47,24 @@
 	<main>
 		<div class="search-wrap">
 			<section class="form-cont f-search">
-				<form action="">
+				<form action="#">
 					<input type="search" name="s-titulo" placeholder="Titulo de foto " autofocus>
-					<input type="search" name="s-desc" placeholder="Descripcion " autofocus>
-					<input type="search" name="s-aut" placeholder="Autor " autofocus>
+					<input type="search" name="s-desc" placeholder="Descripcion ">
+					<input type="search" name="s-aut" placeholder="Autor ">
+					<input type="search" name="s-tags" placeholder="Etiquetas separadas por coma " title=" Separa tus
+					 etiquetas con comas">
+					<p>Filtro</p>
+					<select name="filtro">
+						<option value="likes">Likes</option>
+						<option value="favs">Favoritos</option>
+						<option value="comments">Comentarios</option>
+					</select>
+					<p>Orden</p>
+					<select name="orden">
+						<option value="likes">Ascendente</option>
+						<option value="favs">Descendente</option>
 
+					</select>
 					<input type="submit" value="Buscar">
 				</form>
 			</section>
