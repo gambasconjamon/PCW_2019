@@ -108,6 +108,10 @@ ul.menu {
   text-align: center;
 }
 
+.menu li a span {
+  padding: 3px;
+}
+
 .menu li a i {
   font-size: 1.4em;
   /* margin: 3px; */
@@ -499,12 +503,17 @@ footer a:hover {
 }
 
 /*REGISTRO*/
-section.register {
+section.form-cont {
   max-width: 500px;
   position: relative;
   /* background: red; */
   padding: 40px;
   margin: auto;
+}
+
+.form-cont h2 {
+  font-size: 2em;
+  margin: 0px 0px 20px 0px;
 }
 
 /*FORM*/
@@ -540,9 +549,6 @@ form input:focus {
   border: solid rgba(0, 0, 0, 1) 2px;
 }
 
-/*FORM*/
-/*REGISTRO*/
-
 form input[type="submit"] {
   background: white;
   /* box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1); */
@@ -560,16 +566,8 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background: black;
   color: white;
-  padding: 18px;
-  /* box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
 }
 
-.register h2 {
-  font-size: 2em;
-  margin: 0px 0px 20px 0px;
-}
-
-.menu li a span {
-  padding: 3px;
-}
+/*FORM*/
+/*REGISTRO*/
