@@ -614,3 +614,127 @@ section.i-search {
   padding: 15px;
   margin: 5px;
 }
+
+/*BUSQUEDA*/
+
+/*FOTO*/
+.img-single article img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.img-single a.img-single-link {
+  display: block;
+  flex: 1 1 20em;
+  position: relative;
+}
+
+.img-single-data a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  opacity: 0.5;
+  color: black;
+}
+
+.img-single-data a:hover {
+  font-size: 1.05em;
+  opacity: 1;
+}
+
+.img-single-data h3 {
+  margin: 10px 15px;
+  margin: auto;
+  padding: 0;
+}
+
+.img-single-data p {
+  margin: auto;
+  padding: 0;
+
+  color: black;
+
+}
+
+section.img-single {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.img-single article {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: limegreen;
+  margin: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.img-single article:hover {}
+
+.img-single article:hover .img-data {
+  height: 50%;
+}
+
+.img-single-data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 1;
+  background: white;
+  transition: 0.3s;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-single-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.img-single-desc {
+  margin: 15px;
+}
+
+
+.img-single-tags a {
+  text-decoration: none;
+  padding: 2px;
+  font-style: italic;
+  color: black;
+}
+
+
+.img-single-stat i {
+  font-size: 1.2em;
+  color: black;
+  vertical-align: middle;
+}
+
+.img-single-stat span {
+  text-decoration: none;
+  vertical-align: middle;
+  margin: auto;
+  padding-left: 2px;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+}
+
+.img-single-stat a {
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 2px;
+}
