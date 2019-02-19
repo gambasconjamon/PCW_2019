@@ -45,6 +45,40 @@
 
 	</header>
 	<main>
+
+		<section class="form-cont upload">
+			<h2>Sube tu foto.</h2>
+			<form action="">
+				<input type="text" name="img-title" required placeholder="Titulo de la foto. " autofocus>
+				<textarea name="img-description" id="" cols="30" rows="10" placeholder="Descripción de la foto. "></textarea>
+				<input type="text" name="img-etiquetas" placeholder="Etiquetas">
+				<div>
+					<p href="buscar.html">#lorem</p>
+					<p href="buscar.html">#ipsum</p>
+					<p href="buscar.html">#dolor</p>
+					<p href="buscar.html">#sit-amet</p>
+				</div>
+				<div>
+					<input type="file" id="img-file" name="img-file">
+					<label for="img-file">
+						<img src="resources/placeholder-image.png" alt="">
+					</label>
+				</div>
+				<div>
+					<label for="img-file">
+						<input type="button" value="Seleccionar" disabled>
+					</label>
+
+					<input type="button" value="Deshacer">
+				</div>
+
+				<input type="submit" value="Subir">
+
+			</form>
+
+
+		</section>
+
 	</main>
 	<footer>
 		<p><strong>Brüte. </strong>Programacion del cliente web | 2019</p>

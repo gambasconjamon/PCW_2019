@@ -337,176 +337,12 @@ footer a:hover {
 }
 
 
+
+
+
 /*FOOTER*/
 
-@media (max-width: 870px) {
 
-  /*Pantallas no tan grandes*/
-  header {
-    background: rgba(255, 255, 255, 1);
-    flex-wrap: wrap;
-    display: block;
-  }
-
-  .activador {
-    max-width: none;
-
-  }
-
-  ul.menu {
-    margin: 0;
-  }
-
-  .menu li a {
-    padding: 10px 0px 10px 0px;
-  }
-
-  .menu li a span {
-    display: none;
-  }
-
-  .title img {
-
-    height: 60px;
-
-  }
-
-  .title h3 {
-    font-size: 0.7em
-  }
-
-  .title h1 {
-    font-size: 1.2em;
-  }
-
-  .title div {
-    margin-left: 10px;
-  }
-
-  main {
-    margin-top: 140px;
-    min-height: calc(100vh - (140px - 55px) - 100px - 140px - 10px);
-    margin-bottom: 55px;
-  }
-
-
-}
-
-@media (max-width: 500px) {
-  /*Chiqui-pantallas*/
-
-  .title {
-    margin: 15px 5px 15px 20px;
-
-  }
-
-  /*MENU MOVIL*/
-
-  #menutoggle {
-    background: black;
-    position: absolute;
-    right: 15px;
-    width: 50px;
-    height: 50px;
-    top: 25px;
-    opacity: 0;
-    display: block;
-    z-index: 99;
-  }
-
-  ul.menu {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 95px);
-    background: white;
-    z-index: -2;
-    top: -100vh;
-  }
-
-  .menu li a i {
-    display: none;
-  }
-
-  .menu li a span {
-    display: initial;
-  }
-
-  #menutoggle:checked+.activador #menu-icon>span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 15px);
-  }
-
-  #menutoggle:checked+.activador #menu-icon>span:nth-child(2) {
-    width: 0;
-  }
-
-  #menutoggle:checked+.activador #menu-icon>span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -15px);
-  }
-
-  #menutoggle:checked+.activador ul.menu {
-    top: 95px;
-  }
-
-  #menu-icon {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 21px;
-    right: 20px;
-    /* background:yellow; */
-  }
-
-  #menu-icon span {
-    height: 2px;
-    margin: 13px auto;
-    background: black;
-    width: 90%;
-    z-index: 4;
-    display: block;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .menu li {
-    flex: none;
-    background: white;
-    width: 90%;
-    margin: 5% auto 0px auto;
-
-  }
-
-  .menu li:hover {
-    flex: none;
-    box-shadow: none;
-  }
-
-  .menu li a {
-    margin: auto;
-    font-size: 1.1em;
-    padding: 5px 5px 5px 5px;
-  }
-
-  header h1,
-  header h3 {
-    display: none;
-  }
-
-  .title img {
-    height: 65px;
-  }
-
-  main {
-    margin-top: 95px;
-    min-height: calc(100vh - (95px - 55px) - 100px - 140px - 10px);
-    margin-bottom: 55px;
-  }
-
-
-  /*MENU MOVIL*/
-}
 
 /*REGISTRO*/
 section.form-cont {
@@ -518,6 +354,7 @@ section.form-cont {
 
 .form-cont h2 {
   font-size: 2em;
+  padding: 0;
 }
 
 /*FORM*/
@@ -854,4 +691,216 @@ section>h2 {
 
 section.img-single-comments article h2 {
   color: rgba(0, 0, 0, 0.6);
+}
+
+section.upload form>div {
+  display: flex;
+  justify-content: center;
+  margin: 5px 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: solid rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+section.upload form div>p {
+  margin: 5px 5px;
+  padding: 10px;
+  color: black;
+  font-style: italic;
+  background: rgba(221, 221, 221, 0.4);
+}
+
+section.upload form div img {
+  height: 100%;
+  width: 100%;
+  object-fit: initial;
+}
+
+form input[type="button"] {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  flex: 1;
+}
+
+form input[type="button"]:hover {
+  background: black;
+  color: white;
+}
+
+form input[type="file"] {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 870px) {
+
+  /*Pantallas no tan grandes*/
+  header {
+    background: rgba(255, 255, 255, 1);
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .activador {
+    max-width: none;
+
+  }
+
+  ul.menu {
+    margin: 0;
+  }
+
+  .menu li a {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .menu li a span {
+    display: none;
+  }
+
+  .title img {
+
+    height: 60px;
+
+  }
+
+  .title h3 {
+    font-size: 0.7em
+  }
+
+  .title h1 {
+    font-size: 1.2em;
+  }
+
+  .title div {
+    margin-left: 10px;
+  }
+
+  main {
+    margin-top: 140px;
+    min-height: calc(100vh - (140px - 55px) - 100px - 140px - 10px);
+    margin-bottom: 55px;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  /*Chiqui-pantallas*/
+
+  .title {
+    margin: 15px 5px 15px 20px;
+
+  }
+
+  /*MENU MOVIL*/
+
+  #menutoggle {
+    background: black;
+    position: absolute;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    opacity: 0;
+    display: block;
+    z-index: 99;
+  }
+
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 95px);
+    background: white;
+    z-index: -2;
+    top: -100vh;
+  }
+
+  .menu li a i {
+    display: none;
+  }
+
+  .menu li a span {
+    display: initial;
+  }
+
+  #menutoggle:checked+.activador #menu-icon>span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 15px);
+  }
+
+  #menutoggle:checked+.activador #menu-icon>span:nth-child(2) {
+    width: 0;
+  }
+
+  #menutoggle:checked+.activador #menu-icon>span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -15px);
+  }
+
+  #menutoggle:checked+.activador ul.menu {
+    top: 95px;
+  }
+
+  #menu-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    /* background:yellow; */
+  }
+
+  #menu-icon span {
+    height: 2px;
+    margin: 13px auto;
+    background: black;
+    width: 90%;
+    z-index: 4;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li {
+    flex: none;
+    background: white;
+    width: 90%;
+    margin: 5% auto 0px auto;
+
+  }
+
+  .menu li:hover {
+    flex: none;
+    box-shadow: none;
+  }
+
+  .menu li a {
+    margin: auto;
+    font-size: 1.1em;
+    padding: 5px 5px 5px 5px;
+  }
+
+  header h1,
+  header h3 {
+    display: none;
+  }
+
+  .title img {
+    height: 65px;
+  }
+
+  main {
+    margin-top: 95px;
+    min-height: calc(100vh - (95px - 55px) - 100px - 140px - 10px);
+    margin-bottom: 55px;
+  }
+
+
+  /*MENU MOVIL*/
 }
