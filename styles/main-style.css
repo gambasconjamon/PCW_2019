@@ -536,7 +536,8 @@ form p {
 }
 
 form input,
-form select {
+form select,
+form textarea {
   outline: none;
   padding: 10px;
   background: white;
@@ -549,13 +550,15 @@ form select {
 
 
 form input:hover,
-form select:hover {
+form select:hover,
+form textarea:hover {
   padding: 11px;
   border: solid rgba(0, 0, 0, 0.5);
 }
 
 form input:focus,
-form select:focus {
+form select:focus,
+form textarea:focus {
   padding: 11px;
   border: solid rgba(0, 0, 0, 1) 2px;
 }
@@ -623,7 +626,7 @@ section.i-search {
   width: 100%;
   position: absolute;
   margin: auto;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -631,16 +634,24 @@ section.i-search {
   display: block;
   flex: 1 1 20em;
   position: relative;
+  margin: 35px;
+  /* background-image: url('http://127.0.0.1:5500/uploads/il1.jpg'); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* opacity: 0.4; */
 }
 
-.img-single-data a {
+.img-single-data a,
+.img-single-comments a {
   text-decoration: none;
   transition: 0.3s ease-in-out;
   opacity: 0.5;
   color: black;
 }
 
-.img-single-data a:hover {
+.img-single-data a:hover,
+.img-single-comments a:hover {
   font-size: 1.05em;
   opacity: 1;
 }
@@ -649,14 +660,14 @@ section.i-search {
   margin: 10px 15px;
   margin: auto;
   padding: 0;
+  font-size: 2em;
 }
 
 .img-single-data p {
   margin: auto;
   padding: 0;
-
+  font-size: 1.5em;
   color: black;
-
 }
 
 section.img-single {
@@ -673,12 +684,9 @@ section.img-single {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: limegreen;
   margin: 5px;
   transition: 0.3s ease-in-out;
 }
-
-.img-single article:hover {}
 
 .img-single article:hover .img-data {
   height: 50%;
@@ -706,6 +714,8 @@ section.img-single {
 
 .img-single-desc {
   margin: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -717,13 +727,15 @@ section.img-single {
 }
 
 
-.img-single-stat i {
+.img-single-stat i,
+.comment-stat i {
   font-size: 1.2em;
   color: black;
   vertical-align: middle;
 }
 
-.img-single-stat span {
+.img-single-stat span,
+.comment-stat span {
   text-decoration: none;
   vertical-align: middle;
   margin: auto;
@@ -733,8 +745,102 @@ section.img-single {
   color: black;
 }
 
-.img-single-stat a {
+.img-single-stat a,
+.comment-stat a {
   text-decoration: none;
   vertical-align: middle;
   margin: 2px;
+}
+
+.img-single-props {
+  position: relative;
+  display: flex;
+}
+
+.img-single-props p {
+  padding: 0px 5px;
+  font-style: italic;
+  margin: 0;
+  opacity: 0.6;
+  font-size: 1em;
+}
+
+.img-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  z-index: -1;
+  background-image: url(http://127.0.0.1:5500/uploads/il1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 155%;
+  opacity: 0.2;
+}
+
+section.img-single-comments {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+section.img-single-comments article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 15px 25px;
+  background: white;
+  transition: 0.3s;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+section.img-single-comments article>div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.img-single-comments article>div:nth-child(2) {}
+
+section.img-single-comments article>div h4 {
+  margin: 0;
+  padding: 7px 10px;
+  /* background: black; */
+  border: solid black 1.5px;
+  color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+section.img-single-comments article>div p {
+  margin: 0;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.img-single-comments .comment-stat {
+  display: flex;
+  margin: 10px 0px 0px;
+  flex-direction: row-reverse;
+}
+
+.comment-stat {}
+
+.img-single-comments .comment-stat a {
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 2px;
+  color: black;
+}
+
+.comment-form {
+  max-width: 1000px !important;
+}
+
+section>h2 {
+  padding: 15px;
+  text-align: left;
 }

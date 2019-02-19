@@ -47,11 +47,18 @@
 	<main>
 		<section class="img-single">
 			<article>
+				<div class="img-bg"></div>
 				<a href="foto.html" class="img-single-link"><img src="uploads/il1.jpg" alt="nombre"></a>
 				<div class="img-single-data">
 					<div class="img-single-desc">
-						<h3>Pink overseas</h3>
-						<p><a href="buscar.html">Mark Blezinski</a></p>
+						<div>
+							<h3>Pink overseas</h3>
+							<p><a href="buscar.html">Mark Blezinski</a></p>
+						</div>
+						<div class="img-single-props">
+							<p id="img-dimension">1920x1080</p>
+							<p id="img-size">12,5Mb</p>
+						</div>
 					</div>
 					<div class="img-single-info">
 						<div class="img-single-stat">
@@ -59,16 +66,45 @@
 							<a href="#"><i class="icon-star-empty"></i><span>24</span></a>
 							<a href="#"><i class="icon-comment-empty"></i><span>5</span></a>
 						</div>
-
 						<div class="img-single-tags">
 							<a href="buscar.html">#lorem</a>
 							<a href="buscar.html">#ipsum</a>
 							<a href="buscar.html">#dolor</a>
 							<a href="buscar.html">#sit-amet</a>
 						</div>
+
 					</div>
 				</div>
+		</section>
+		<section class="img-single-comments">
+			<h2>Comentarios</h2>
+			<article>
+				<div>
+					<h4>Agapito Bizcochero</h4>
+					<p>10-enero-2019</p>
+				</div>
+				<div>
+					<h2>Me gusta mucho la foto</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium rem ratione ab, blanditiis
+						laudantium illum soluta eum provident, quos aperiam voluptatem? Corporis non alias exercitationem possimus
+						voluptas, natus aut.
+					</p>
+				</div>
+				<div class="comment-stat">
+					<a href="#"><i class="icon-thumbs-up"></i><span>12</span></a>
+					<a href="#"><i class=" icon-bookmark-empty"></i><span>24</span></a>
+				</div>
 			</article>
+			</article>
+		</section>
+		<section class="form-cont comment-form">
+			<h2>Escribe un comentario.</h2>
+			<form action="">
+				<input type="text" name="coment_title" required placeholder="Titulo del comentario " autofocus pattern="{0,50}"
+				 title="Entre 0 y 50 caracteres">
+				<textarea name="comentario" id="" cols="30" rows="10" placeholder="Titulo del comentario " pattern="{0,200}"></textarea>
+				<input type="submit" value="Comentar">
+			</form>
 		</section>
 	</main>
 	<footer>
