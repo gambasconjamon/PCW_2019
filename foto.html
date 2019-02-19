@@ -48,7 +48,7 @@
 		<section class="img-single">
 			<article>
 				<div class="img-bg"></div>
-				<a href="foto.html" class="img-single-link"><img src="uploads/il1.jpg" alt="nombre"></a>
+				<a href="uploads/il1.jpg" class="img-single-link"><img src="uploads/il1.jpg" alt="nombre"></a>
 				<div class="img-single-data">
 					<div class="img-single-desc">
 						<div>
@@ -64,7 +64,7 @@
 						<div class="img-single-stat">
 							<a href="#"><i class="icon-heart-empty"></i><span>12</span></a>
 							<a href="#"><i class="icon-star-empty"></i><span>24</span></a>
-							<a href="#"><i class="icon-comment-empty"></i><span>5</span></a>
+							<a href="#comment-section"><i class="icon-comment-empty"></i><span>5</span></a>
 						</div>
 						<div class="img-single-tags">
 							<a href="buscar.html">#lorem</a>
@@ -76,7 +76,7 @@
 					</div>
 				</div>
 		</section>
-		<section class="img-single-comments">
+		<section class="img-single-comments" id="comment-section">
 			<h2>Comentarios</h2>
 			<article>
 				<div>
@@ -100,9 +100,8 @@
 		<section class="form-cont comment-form">
 			<h2>Escribe un comentario.</h2>
 			<form action="">
-				<input type="text" name="coment_title" required placeholder="Titulo del comentario " autofocus pattern="{0,50}"
-				 title="Entre 0 y 50 caracteres">
-				<textarea name="comentario" id="" cols="30" rows="10" placeholder="Titulo del comentario " pattern="{0,200}"></textarea>
+				<input type="text" name="coment_title" required placeholder="Titulo del comentario " pattern="{0,50}" title="Entre 0 y 50 caracteres">
+				<textarea name="comentario" id="" cols="30" rows="10" placeholder="Comentario " pattern="{0,200}"></textarea>
 				<input type="submit" value="Comentar">
 			</form>
 		</section>
