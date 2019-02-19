@@ -517,7 +517,6 @@ section.form-cont {
 
 .form-cont h2 {
   font-size: 2em;
-  margin: 0px 0px 20px 0px;
 }
 
 /*FORM*/
@@ -626,7 +625,7 @@ section.i-search {
   width: 100%;
   position: absolute;
   margin: auto;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -781,8 +780,12 @@ section.img-single {
 section.img-single-comments {
   display: flex;
   margin: auto;
-  max-width: 1000px;
+  margin-top: 15px;
+  max-width: 990px;
   flex-wrap: wrap;
+  background: white;
+  transition: 0.3s;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 section.img-single-comments article {
@@ -790,12 +793,10 @@ section.img-single-comments article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 5px;
+  margin: 10px 35px;
   padding: 15px 25px;
-  background: white;
-  transition: 0.3s;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-in-out;
+  border-top: solid rgba(0, 0, 0, 0.1) 2px;
 }
 
 section.img-single-comments article>div:nth-child(1) {
@@ -807,12 +808,11 @@ section.img-single-comments article>div:nth-child(2) {}
 
 section.img-single-comments article>div h4 {
   margin: 0;
+  font-weight: 600;
   padding: 7px 10px;
-  /* background: black; */
-  border: solid black 1.5px;
-  color: white;
+  border: solid rgba(0, 0, 0, 0.5) 1px;
   color: black;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 section.img-single-comments article>div p {
@@ -837,10 +837,15 @@ section.img-single-comments article>div p {
 }
 
 .comment-form {
-  max-width: 1000px !important;
+  max-width: 990px !important;
+  padding: 0px 5px !important;
 }
 
 section>h2 {
-  padding: 15px;
+  padding: 0px 1.5em;
   text-align: left;
+}
+
+section.img-single-comments article h2 {
+  color: rgba(0, 0, 0, 0.6);
 }
