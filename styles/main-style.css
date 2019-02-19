@@ -849,6 +849,7 @@ section.img-single-comments article>div p {
 section>h2 {
   padding: 0px 30px;
   text-align: left;
+  width: 100%;
 }
 
 section.img-single-comments article h2 {
