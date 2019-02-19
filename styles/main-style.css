@@ -132,8 +132,8 @@ ul.menu {
 
 
 main {
-  margin-top: 130px;
-  min-height: calc(100vh - (130px - 55px) - 100px - 140px - 10px);
+  margin-top: 100px;
+  min-height: calc(100vh - (100px - 55px) - 100px - 140px - 10px);
   margin-bottom: 55px;
 }
 
@@ -183,6 +183,7 @@ section.img-container {
   display: flex;
   margin: auto;
   max-width: 1000px;
+  padding: 0px;
   flex-wrap: wrap;
 }
 
@@ -212,7 +213,7 @@ section.img-container {
 .img-data {
   position: relative;
   width: 100%;
-  height: 39%;
+  height: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -528,6 +529,7 @@ form {
   flex-direction: column;
   font-family: 'Sarabun';
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 
 form p {
@@ -694,6 +696,7 @@ section.img-single {
 .img-single-data {
   position: relative;
   display: flex;
+  padding: 20px 30px;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
@@ -705,14 +708,15 @@ section.img-single {
 
 .img-single-info {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-between;
-  margin: 15px;
+  margin: 23px 0 0px 0px;
 }
 
 .img-single-desc {
-  margin: 15px;
+  /* margin: 15px; */
   display: flex;
   justify-content: space-between;
 }
@@ -808,9 +812,10 @@ section.img-single-comments article>div:nth-child(2) {}
 
 section.img-single-comments article>div h4 {
   margin: 0;
+  font-size: 1.2em;
   font-weight: 600;
-  padding: 7px 10px;
-  border: solid rgba(0, 0, 0, 0.5) 1px;
+  /* padding: 7px 10px; */
+  /* border: solid rgba(0, 0, 0, 0.5) 1px; */
   color: black;
   /* border-radius: 5px; */
 }
@@ -842,7 +847,7 @@ section.img-single-comments article>div p {
 }
 
 section>h2 {
-  padding: 0px 1.5em;
+  padding: 0px 30px;
   text-align: left;
 }
 
