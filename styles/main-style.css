@@ -696,6 +696,7 @@ section.img-single-comments article h2 {
 section.upload form>div {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 5px 10px;
   flex-wrap: wrap;
   padding: 10px;
@@ -903,4 +904,33 @@ form input[type="file"] {
 
 
   /*MENU MOVIL*/
+}
+
+section.upload form>div .button {
+  margin: 5px 13px;
+  padding: 10px;
+  border: solid rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+  flex: 1 1 5em;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+section.upload form>div .button:focus {
+  border: solid rgba(0, 0, 0, 1);
+}
+
+section.upload form>div .button:hover {
+  border: solid rgba(0, 0, 0, 0);
+  background: black;
+  color: white;
+}
+
+section.upload form>div label {
+  cursor: pointer;
+  width: 100%;
 }
