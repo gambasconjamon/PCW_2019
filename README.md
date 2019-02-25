@@ -49,3 +49,13 @@ El sitio se han implementado ciertas cualidades de CSS3 que caben destacar por s
 -  **Media Querys** : Se han hecho uso de mediaquerys para adaptar los estilos de la pagina en las distintas resoluciones posibles, de tal forma que la jerarquia de querys cambia segun resolución, ejemplo: `@media (max-width: 870px) {}`
 - **Pseudo clases**: Se han implementado pseudo clases para la optimización del codigo en el fichero de estilos. Consiste en hacer referencia directamente a los elementos hijos de una clase o un elemento, posibilitando asi el uso de una sola clase para varios elementos, ejemplo:
 `#menutoggle:checked+.activador#menu-icon>span:nth-child(1) { transform: rotate(45deg) translate(6px, 15px); }`
+-**Flex box**: Uso del elemento flex-box junto con sus distintos atributos para hacer que los elementos se adapten al tamaño de su contenedor padre según el tamao de pantalla, minimizandoa si el uso de mediaquerys y creando un sitio más rapido y optimo.
+`ul.menu {`
+  `display: flex;`
+  `flex: 1 1 20em;`
+  `flex-wrap: nowrap;...`
+
+  `.menu li {`
+  `flex: 1 1 5em;`
+  `display: inherit;`
+  `position: relative;...`
