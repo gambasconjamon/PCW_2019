@@ -51,5 +51,4 @@ El sitio se han implementado ciertas cualidades de CSS3 que caben destacar por s
 `#menutoggle:checked+.activador#menu-icon>span:nth-child(1) { transform: rotate(45deg) translate(6px, 15px); }`
 -**Flex box**: Uso del elemento flex-box junto con sus distintos atributos para hacer que los elementos se adapten al tamaño de su contenedor padre según el tamao de pantalla, minimizandoa si el uso de mediaquerys y creando un sitio más rapido y optimo.  
 `ul.menu {display: flex; flex: 1 1 20em; flex-wrap: nowrap;...`
-
-  `.menu li { flex: 1 1 5em; display: inherit; position: relative;...`
+`.menu li { flex: 1 1 5em; display: inherit; position: relative;...`
