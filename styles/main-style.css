@@ -470,7 +470,7 @@ section.i-search {
 
 .img-single a.img-single-link {
   display: block;
-  flex: 1 1 20em;
+  flex: 1 1 25em;
   position: relative;
   margin: 35px;
   /* background-image: url('http://127.0.0.1:5500/uploads/il1.jpg'); */
@@ -512,7 +512,7 @@ section.img-single {
   display: flex;
   margin: auto;
   max-width: 1000px;
-  height: 100vh;
+  /* height: 100vh; */
   flex-wrap: wrap;
 }
 
@@ -522,7 +522,7 @@ section.img-single {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 5px;
+  /* margin: 5px; */
   transition: 0.3s ease-in-out;
 }
 
@@ -635,7 +635,7 @@ section.img-single-comments article {
   flex-direction: column;
   justify-content: space-between;
   margin: 10px 35px;
-  padding: 15px 25px;
+  padding: 15px 0px;
   transition: 0.3s ease-in-out;
   border-top: solid rgba(0, 0, 0, 0.1) 2px;
 }
@@ -822,7 +822,7 @@ form input[type="file"] {
     height: calc(100vh - 95px);
     background: white;
     z-index: -2;
-    top: -100vh;
+    top: -150vh;
   }
 
   .menu li a i {
