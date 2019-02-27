@@ -20,6 +20,8 @@
 .icon-camera:before { content: '\e812'; } /* '' */
 .icon-bookmark:before { content: '\e813'; } /* '' */
 .icon-bookmark-empty:before { content: '\f097'; } /* '' */
+.icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-comment-empty:before { content: '\f0e5'; } /* '' */
 .icon-thumbs-up-alt:before { content: '\f164'; } /* '' */
 .icon-thumbs-down-alt:before { content: '\f165'; } /* '' */
+.icon-file-pdf:before { content: '\f1c1'; } /* '' */

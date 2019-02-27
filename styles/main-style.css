@@ -938,16 +938,15 @@ section.upload form>div label {
 section.yo-container {
   max-width: 650px;
   position: relative;
-  padding: 40px;
   margin: auto;
 }
 
 .yo-container article {
   background: white;
-  padding: 45px;
+  padding: 45px 25px 0px;
   flex-direction: column;
   display: flex;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .yo-container ul {
@@ -989,9 +988,10 @@ section.yo-container {
 }
 
 .yo-container div>p:nth-child(2) {
-  font-size: 1.4em;
+  font-size: 1.2em;
   opacity: 0.7;
   margin: 5px 0px;
+  text-align: justify;
 }
 
 .yo-container div>p:nth-child(3) {
@@ -1002,4 +1002,39 @@ section.yo-container {
   font-style: italic;
 }
 
-.yo-container article div {}
+.yo-container article div>a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: solid 2px;
+  justify-content: space-between;
+  border-radius: 100px;
+  text-decoration: none;
+  margin: 15px 10px 5px;
+  color: black;
+  background: white;
+  flex: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.yo-container article div>a:hover {
+  background: black;
+  color: white;
+  border: solid 2px black;
+}
+
+.yo-container article div>a i {
+  font-size: 2em;
+}
+
+.yo-container article div>a span {
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+.yo-container article div>div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
