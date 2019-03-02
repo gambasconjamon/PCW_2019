@@ -645,8 +645,6 @@ section.img-single-comments article>div:nth-child(1) {
   justify-content: space-between;
 }
 
-section.img-single-comments article>div:nth-child(2) {}
-
 section.img-single-comments article>div h4 {
   margin: 0;
   font-size: 1.2em;
@@ -669,8 +667,6 @@ section.img-single-comments article>div p {
   flex-direction: row-reverse;
 }
 
-.comment-stat {}
-
 .img-single-comments .comment-stat a {
   text-decoration: none;
   vertical-align: middle;
@@ -678,9 +674,9 @@ section.img-single-comments article>div p {
   color: black;
 }
 
-.comment-form {
-  max-width: 990px !important;
-  padding: 0px 5px !important;
+main .comment-form {
+  max-width: 990px;
+  padding: 0px 5px;
 }
 
 section>h2 {
