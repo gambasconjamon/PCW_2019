@@ -8,6 +8,10 @@ body {
   font-family: 'Sarabun';
 }
 
+.hidden {
+  display: none;
+}
+
 /*HEADER*/
 header {
   display: flex;
