@@ -18,14 +18,14 @@
 <body>
 	<header>
 		<div class="title">
-			<img src="resources/SVG/logo-short.svg">
+			<img src="resources/SVG/logo-short.svg" alt="BruteLogo">
 			<div>
 				<h1>BRÜTE</h1>
 				<h3>Create and share.</h3>
 			</div>
 		</div>
 		<input type="checkbox" name="tikitoggle" id="menutoggle">
-		<label for="menutoggle" class="activador">
+		<div class="activador">
 			<ul class="menu">
 				<li><a href="index.html"><i class=" icon-home"></i><span>Inicio</span> </a></li>
 				<li><a href="buscar.html"><i class=" icon-search-1"></i><span>Buscar</span> </a></li>
@@ -40,7 +40,7 @@
 				<span></span>
 				<span></span>
 			</div>
-		</label>
+		</div>
 
 
 	</header>
@@ -48,7 +48,7 @@
 
 		<section class="form-cont">
 			<h2>Accede a tu cuenta.</h2>
-			<form action="">
+			<form action="/login.html">
 				<input type="text" name="login" required placeholder="Alias " autofocus pattern="^\D[\w\d]{4,20}" title="No puede empezar por numero, puede contener de 4 a 20 caracteres (mayusculas, minusculas y numeros)">
 				<input type="password" name="pass1" required placeholder="Introduce Contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s)(?!.*[!-/:-?\[-`{-~]).{6,20}$"
 				 title="Debe contener al menos una mayuscula, minuscula y numero, de 6 a 20 caracteres ">

@@ -18,14 +18,14 @@
 <body>
 	<header>
 		<div class="title">
-			<img src="resources/SVG/logo-short.svg">
+			<img src="resources/SVG/logo-short.svg" alt="BruteLogo">
 			<div>
 				<h1>BRÜTE</h1>
 				<h3>Create and share.</h3>
 			</div>
 		</div>
 		<input type="checkbox" name="tikitoggle" id="menutoggle">
-		<label for="menutoggle" class="activador">
+		<div class="activador">
 			<ul class="menu">
 				<li><a href="index.html"><i class=" icon-home"></i><span>Inicio</span> </a></li>
 				<li><a href="buscar.html"><i class=" icon-search-1"></i><span>Buscar</span> </a></li>
@@ -40,12 +40,13 @@
 				<span></span>
 				<span></span>
 			</div>
-		</label>
+		</div>
 
 
 	</header>
 	<main>
 		<section class="img-single">
+			<h2 class="hidden">Página de foto</h2>
 			<article>
 				<div class="img-bg"></div>
 				<a href="uploads/il1.jpg" class="img-single-link"><img src="uploads/il1.jpg" alt="nombre"></a>
@@ -75,6 +76,7 @@
 
 					</div>
 				</div>
+			</article>
 		</section>
 		<section class="img-single-comments" id="comment-section">
 			<h2>Comentarios</h2>
@@ -95,14 +97,14 @@
 					<a href="#"><i class=" icon-bookmark-empty"></i><span>24</span></a>
 				</div>
 			</article>
-			</article>
+
 		</section>
 		<section class="form-cont comment-form">
 			<br>
-			<form action="">
+			<form action="/foto.html">
 				<h3>Escribe un comentario: </h3>
 				<input type="text" name="coment_title" required placeholder="Titulo del comentario " pattern="{0,50}" title="Entre 0 y 50 caracteres">
-				<textarea name="comentario" id="" cols="30" rows="10" placeholder="Comentario " pattern="{0,200}"></textarea>
+				<textarea name="comentario" id="comment-full" cols="50" rows="5" placeholder="Comentario " maxlength="200"></textarea>
 				<input type="submit" value="Comentar">
 			</form>
 		</section>

@@ -17,14 +17,14 @@
 <body>
 	<header>
 		<div class="title">
-			<img src="resources/SVG/logo-short.svg">
+			<img src="resources/SVG/logo-short.svg" alt="BruteLogo">
 			<div>
 				<h1>BRÜTE</h1>
 				<h3>Create and share.</h3>
 			</div>
 		</div>
 		<input type="checkbox" name="tikitoggle" id="menutoggle">
-		<label for="menutoggle" class="activador">
+		<div class="activador">
 			<ul class="menu">
 				<li><a href="index.html"><i class=" icon-home"></i><span>Inicio</span> </a></li>
 				<li><a href="buscar.html"><i class=" icon-search-1"></i><span>Buscar</span> </a></li>
@@ -39,7 +39,7 @@
 				<span></span>
 				<span></span>
 			</div>
-		</label>
+		</div>
 
 
 	</header>
@@ -47,7 +47,7 @@
 
 		<section class="form-cont">
 			<h2>Unete a nosotros.</h2>
-			<form action="">
+			<form action="/registro.html">
 				<input type="text" name="login" required placeholder="Alias " autofocus pattern="^\D[\w\d]{4,20}" title="No puede empezar por numero, puede contener de 4 a 20 caracteres (mayusculas, minusculas y numeros)">
 				<input type="text" name="nombre" required placeholder="Nombre completo">
 				<input type="email" name="email" required placeholder="Email">

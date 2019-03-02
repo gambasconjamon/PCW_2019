@@ -18,14 +18,14 @@
 <body>
 	<header>
 		<div class="title">
-			<img src="resources/SVG/logo-short.svg">
+			<img src="resources/SVG/logo-short.svg" alt="BruteLogo">
 			<div>
 				<h1>BRÜTE</h1>
 				<h3>Create and share.</h3>
 			</div>
 		</div>
 		<input type="checkbox" name="tikitoggle" id="menutoggle">
-		<label for="menutoggle" class="activador">
+		<div class="activador">
 			<ul class="menu">
 				<li><a href="index.html"><i class=" icon-home"></i><span>Inicio</span> </a></li>
 				<li><a href="buscar.html"><i class=" icon-search-1"></i><span>Buscar</span> </a></li>
@@ -40,13 +40,15 @@
 				<span></span>
 				<span></span>
 			</div>
-		</label>
+		</div>
 
 
 	</header>
 	<main>
 		<div class="search-wrap">
 			<section class="form-cont f-search">
+				<h2 class="hidden">Busqueda</h2>
+
 				<form action="#">
 					<input type="search" name="s-titulo" placeholder="Titulo de foto " autofocus>
 					<input type="search" name="s-desc" placeholder="Descripcion ">
@@ -69,7 +71,7 @@
 				</form>
 			</section>
 			<section class="img-container i-search" id="top">
-
+				<h2 class="hidden">Resultados</h2>
 				<article>
 					<a href="foto.html" class="img-link"><img src="uploads/il1.jpg" alt="nombre"></a>
 					<div class="img-data">

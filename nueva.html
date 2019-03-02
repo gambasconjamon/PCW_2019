@@ -18,14 +18,14 @@
 <body>
 	<header>
 		<div class="title">
-			<img src="resources/SVG/logo-short.svg">
+			<img src="resources/SVG/logo-short.svg" alt="BruteLogo">
 			<div>
 				<h1>BRÜTE</h1>
 				<h3>Create and share.</h3>
 			</div>
 		</div>
 		<input type="checkbox" name="tikitoggle" id="menutoggle">
-		<label for="menutoggle" class="activador">
+		<div class="activador">
 			<ul class="menu">
 				<li><a href="index.html"><i class=" icon-home"></i><span>Inicio</span> </a></li>
 				<li><a href="buscar.html"><i class=" icon-search-1"></i><span>Buscar</span> </a></li>
@@ -40,7 +40,7 @@
 				<span></span>
 				<span></span>
 			</div>
-		</label>
+		</div>
 
 
 	</header>
@@ -48,15 +48,15 @@
 
 		<section class="form-cont upload">
 			<h2>Sube tu foto.</h2>
-			<form action="">
+			<form action="/nueva.html">
 				<input type="text" name="img-title" required placeholder="Titulo de la foto. " autofocus>
-				<textarea name="img-description" id="" cols="30" rows="10" placeholder="Descripción de la foto. "></textarea>
+				<textarea name="img-description" id="img-desc" cols="30" rows="10" placeholder="Descripción de la foto. "></textarea>
 				<input type="text" name="img-etiquetas" placeholder="Etiquetas">
 				<div>
-					<p href="buscar.html">#lorem</p>
-					<p href="buscar.html">#ipsum</p>
-					<p href="buscar.html">#dolor</p>
-					<p href="buscar.html">#sit-amet</p>
+					<p>#lorem</p>
+					<p>#ipsum</p>
+					<p>#dolor</p>
+					<p>#sit-amet</p>
 				</div>
 				<div>
 					<input type="file" id="img-file" name="img-file">
