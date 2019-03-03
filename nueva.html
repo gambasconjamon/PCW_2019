@@ -49,9 +49,9 @@
 		<section class="form-cont upload">
 			<h2>Sube tu foto.</h2>
 			<form action="/nueva.html">
-				<input type="text" name="img-title" required placeholder="Titulo de la foto. " autofocus>
-				<textarea name="img-description" id="img-desc" cols="30" rows="10" placeholder="Descripción de la foto. "></textarea>
-				<input type="text" name="img-etiquetas" placeholder="Etiquetas">
+				<input type="text" name="img-title" required placeholder="Titulo de la foto. " pattern="{0,100}" autofocus>
+				<textarea name="img-description" id="img-desc" required cols="30" rows="10" maxlength="300" placeholder="Descripción de la foto. "></textarea>
+				<input type="text" name="img-etiquetas" placeholder="Etiquetas" required>
 				<div>
 					<p>#lorem</p>
 					<p>#ipsum</p>
@@ -59,7 +59,7 @@
 					<p>#sit-amet</p>
 				</div>
 				<div>
-					<input type="file" id="img-file" name="img-file">
+					<input type="file" id="img-file" name="img-file" required>
 					<label for="img-file">
 						<img src="resources/placeholder-image.png" alt="Imagen Subida">
 					</label>
@@ -68,7 +68,7 @@
 
 					<span class="button" id="upload-btn"><label for="img-file">Seleccionar</label></span>
 
-					<span class="button" id="delete-btn">Deshacer</span>
+					<span class="button" id="delete-btn">Eliminar</span>
 				</div>
 
 				<input type="submit" value="Subir">
