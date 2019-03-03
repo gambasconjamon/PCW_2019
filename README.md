@@ -1,5 +1,5 @@
 # Practica 1 para PCW2019
-> **Autor:** Samuel MArtinez Javaloyes  
+> **Autor:** Samuel Martinez Javaloyes  
 > **ID:** 74394433  
 > **Grupo:** Miercoles *19:00-21:00h*  
 
