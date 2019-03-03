@@ -1,8 +1,12 @@
+# Practica 1 para PCW2019
+> **Autor:** Samuel MArtinez Javaloyes
+> **ID:** 74394433
+> **Grupo:** Miercoles *19:00-21:00h*
+
+
 ## Partes implementadas
 
 Las partes implementadas pedidas en el enunciado de la practica han sido las siguientes:
-
-  
 
 -  [x] Index (Página Principal)
 
@@ -22,11 +26,9 @@ Las partes implementadas pedidas en el enunciado de la practica han sido las sig
 
 -  [x] Acerca de
 
-  
+*Todos los apartados de las anteriores páginas más el resto de puntos generales han sido implementados*
 
 ### A destacar de HTML5
-
-  
 
 Se han implementado todas las paginas disponibles que el enunciado pedía implementar en esta práctica. Las paginas cumplen con el doctype de la última actualización de HTML5. Se han intentado usar las **etiquetas que mejor corresponden con cada tipo de contenido** en la página **para cumplir así mejor con los estándares del W3C**.
 
@@ -64,5 +66,6 @@ En cuanto a compatibilidad en elementos de CSS, el sitio web se ha probado en 4 
 
 - **Opera:** La compatibilad es bastante buena, Opera ha mejorado mucho desde el 2017.
 
-- **Chrome:** Todo correcto, aunque hay un pequeño detalle que cabe destacar sobre la version movil, mas concretamente el **Software** movil de chrome en Android, anula una pequeña caracteristica de CSS poco explorada que es el `background-image` y `background-attachment` para generar un efecto parallax en movil. A priori, usandolo en el móvil no se muestra, aunque se trata de una filigrana sin importancia que puede ser arreglada mediante Javascript
+- **Chrome:** Todo correcto, aunque hay un pequeño detalle que cabe destacar sobre la version movil, mas concretamente el 
+**Software** movil de chrome en Android, anula una pequeña caracteristica de CSS poco explorada que es el `background-image` y `background-attachment` para generar un efecto parallax en movil. A priori, usandolo en el móvil no se muestra dicho efecto, aunque se trata de una filigrana sin importancia que puede ser arreglada mediante Javascript.
 
