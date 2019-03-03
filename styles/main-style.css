@@ -904,6 +904,11 @@ form input[type="file"] {
 
 
   /*MENU MOVIL*/
+
+  .img-container article {
+    flex-basis: 15em;
+  }
+
 }
 
 section.upload form>div .button {
